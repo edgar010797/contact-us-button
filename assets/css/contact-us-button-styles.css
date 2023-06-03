@@ -1,0 +1,119 @@
+
+.cubp-displaygrid{
+    display: grid !important;
+}
+
+.cubp-social-buttons .cubp-social-button{
+    text-decoration: none;
+}
+.cubp-social-buttons {
+    display: grid;
+    position: fixed;
+    right: 6rem;
+    bottom: 10rem;
+    z-index: 999999999999;
+}
+
+.cubp-first-social-button {
+    position: fixed;
+    right: 6rem;
+    bottom: 5rem;
+    z-index: 999999999999;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 3px;
+    text-align: center;
+    overflow: hidden;
+    opacity: .99;
+    border-radius: 28%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.cubp-social-button {
+    text-decoration: none;
+    display: none;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    /*line-height: 50px;*/
+    margin: 3px 3px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    opacity: .99;
+    border-radius: 28%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.cubp-social-button:before {
+    content: '';
+    background-color: #000;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.cubp-social-button i {
+    font-size: 28px;
+    vertical-align: middle;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition: all 0.3s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.cubp-social-button:focus:before, .cubp-social-button:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.cubp-social-button:focus i,
+.cubp-social-button:hover i {
+    color: #fff !important;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+@media (min-width: 421px) and (max-width: 767px) {
+    .cubp-social-buttons {
+        right: 3rem;
+        bottom: 10rem;
+    }
+
+    .cubp-first-social-button {
+        right: 3rem;
+        bottom: 5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .cubp-social-buttons {
+        right: 3rem;
+        bottom: 10rem;
+    }
+
+    .cubp-first-social-button {
+        right: 3rem;
+        bottom: 5rem;
+    }
+}
+
+
